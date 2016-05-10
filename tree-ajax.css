@@ -1,0 +1,100 @@
+.body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; } 
+.body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; } 
+.h1, h2, h3, h4, h5, h6{ font-size:100%; } 
+.address, cite, dfn, em, var { font-style:normal; } 
+.code, kbd, pre, samp { font-family:couriernew, courier, monospace; } 
+.small{ font-size:12px; } 
+.ul, ol { list-style:none; } 
+.a { text-decoration:none; } 
+.a:hover { text-decoration:underline; } 
+.sup { vertical-align:text-top; } 
+.sub{ vertical-align:text-bottom; } 
+.legend { color:#000; } 
+.fieldset, img { border:0; } 
+.button, input, select, textarea { font-size:100%; } 
+.table { border-collapse:collapse; border-spacing:0; } 
+#selectDiv{
+	width: 800px;
+	height:500px;
+	border: 2px solid #999;
+	border-radius: 5px;
+
+}
+#selectDiv #selectLeft,#selectDiv #selectRight{
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	padding: 5px;
+	float: left;
+	box-sizing: border-box;
+	overflow: auto;
+}
+#selectDiv #selectLeft{
+	border-right:2px solid #999;
+	position: relative;
+}
+#selectDiv #selectLeft .title,#selectDiv #selectLeft .selection{
+	line-height: 22px;
+}
+div.selection>div.selection{
+	padding-left: 20px;
+}
+div.selection>div.selection>div.selection{
+	padding-left: 20px;
+}
+div.selection>div.selection>div.selection>div.selection{
+	padding-left: 20px;
+}
+div.selection>div.selection>div.selection>div.selection>div.selection{
+	padding-left: 20px;
+}
+div.selection>div.selection>div.selection>div.selection>div.selection>div.selection{
+	padding-left: 20px;
+}
+div.selection>div.selection>div.selection>div.selection>div.selection>div.selection>div.selection{
+	padding-left: 20px;
+}
+div.selection>div.selection>div.selection>div.selection>div.selection>div.selection>div.selection>div.selection{
+	padding-left: 20px;
+}
+div.selection>div.selection>div.selection>div.selection>div.selection>div.selection>div.selection>div.selection>div.selection{
+	padding-left: 20px;
+}
+.updown{
+	cursor:pointer;
+	width: 15px;
+	display: inline-block;
+	text-align: center;
+}
+#selectRight div{
+	border-bottom: 1px dashed #666;
+}
+#selectRight div span{
+	display: inline-block;
+	overflow: hidden;
+	height: 40px;
+	line-height: 40px;
+}
+#selectRight div .delectIcon{
+	margin-right: 5px;
+	min-width: 15px;
+	width: 10%;
+	cursor:pointer;
+	text-align: center;
+}
+#selectRight div .s-name{
+	width: 35%;
+	text-align:left;
+}
+#selectRight div .parent-name{
+	width: 50%;
+	text-align: center;
+}
+
+.title input{
+	margin: 0 2px;
+}
+.loading{
+	width: 16px;
+	height: 16px;
+}

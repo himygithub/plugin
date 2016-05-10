@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Tree Multiselect test</title>
+
+    <meta charset="UTF-8">
+
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/jquery-ui.min.js"></script>
+    <script src="./js/tree-ajax-jquery.js"></script>
+    <style>
+      
+    </style>
+    <link rel="stylesheet" href="./css/tree-ajax.css">
+  </head>
+
+  <body>
+    <div id="selectDiv">
+        <span id ="selectLeft">
+
+          <div class="selections">
+            
+          </div>
+        </span>
+        <span id ="selectRight">
+          
+        </span>
+    </div>
+
+    
+    <script type="text/javascript">
+        var argument ={pidId:"all"};
+        var argumentselectDefaul ={pidId:"select"};
+        var _style ='background:#999';
+        $("selectDiv").treeMultiselect({getTreeUrl:"http://localhost:8080/springmvcajax/ajaxUser3.do",argument:argument,selectDefaultURL:"http://localhost:8080/springmvcajax/ajaxUser3.do",argumentselectDefaul:argumentselectDefaul,_style:_style});
+    </script>
+  </body>
+</html>
