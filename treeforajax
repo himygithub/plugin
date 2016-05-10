@@ -1,0 +1,40 @@
+一、Html结构
+<!DOCTYPE>
+<html>
+  <head>
+    <title>Tree Multiselect test</title>
+    <meta charset="UTF-8">
+    <script src="./lib/jquery.js"></script>
+    <script src="./lib/jquery-ui.min.js"></script>
+    <script src="./js/tree-ajax-jquery.js"></script>
+    <link rel="stylesheet" href="./css/tree-ajax.css">
+  </head>
+  <body>
+    <div id="selectDiv">
+        <span id ="selectLeft">
+<div class="selections">
+          	</div>
+        </span>
+        <span id ="selectRight">
+        </span>
+    </div>
+<!--------------------------调用示例----------------------->
+    <script type="text/javascript">
+        var argument ={pidId:"all"};
+        var argument1 ={pidId:"select"};
+        var _style ='background:#999';
+      $("selectDiv").treeMultiselect({getTreeUrl:"http://localhost:8080/springmvcajax/ajaxUser3.do",argument:argument,selectDefaultURL:"http://localhost:8080/springmvcajax/ajaxUser3.do",argumentselectDefaul:argumentselectDefaul,_style:_style});
+</script>
+<!--------------------------------------------------------------------------->
+
+  </body>
+</html>
+
+二、调用方法
+$("selectDiv").treeMultiselect({});
+参数
+getTreeUrl 获取初始结构的url地址。
+argument 获取初始结构的url地址请求带的参数。
+selectDefaultURL 默认被选中的checkbox。
+argumentselectDefaul 默认被选中的checkbox 请求带的参数。
+_style 整体样式调整，style写字符串。
